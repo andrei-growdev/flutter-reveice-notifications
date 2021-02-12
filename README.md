@@ -2,9 +2,15 @@
 
 # como usar
   Para testar esse projeto basta compilar ele através do VSCode
-  O teste via [Postman] pode ser feito da seguinte forma
-    - nos [Headers] adicionar uma key [Authorization] com valor [key=AAAA6bLLqVo:APA91bGmbSJ_DhTHKgru-e0MB2mE6j24RdXS8Ryr-EL2kT28rIPpkvoCap-YRskvu85f0pWL_YLvjnP7hpUciUioGq9_CrFpc6njK4_AsNqkcm8zgWmYN7WNu-rRM7F4WaZKnQ3T1q7d]
+
+   O teste via [Postman] pode ser feito da seguinte forma
+
+    - nos [Headers] adicionar uma key [Authorization] com valor:
+   
+    [key=AAAA6bLLqVo:APA91bGmbSJ_DhTHKgru-e0MB2mE6j24RdXS8Ryr-EL2kT28rIPpkvoCap-YRskvu85f0pWL_YLvjnP7hpUciUioGq9_CrFpc6njK4_AsNqkcm8zgWmYN7WNu-rRM7F4WaZKnQ3T1q7d]
+
     - lembrar de trocar o token no [body]
+
     - no [body] adicionar o seguinte JSON:
        {
          "notification": {
