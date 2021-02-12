@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1003727071578",
+    "project_id": "flutter-receive-notifica-ab311",
+    "storage_bucket": "flutter-receive-notifica-ab311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003727071578:android:f8d571ca56d139226feb63",
+        "android_client_info": {
+          "package_name": "br.com.andreibrando.flutter_receive_notifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003727071578-1o71ei7k3dsva9fenjq5louk9bn5b21f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCdvdmIO-SDg44Amc8DGoumDTi3Bo5VIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003727071578-1o71ei7k3dsva9fenjq5louk9bn5b21f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
