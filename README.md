@@ -7,7 +7,7 @@
 
     - nos [Headers] adicionar uma key [Authorization] com valor:
    
-    [key=AAAA6bLLqVo:APA91bGmbSJ_DhTHKgru-e0MB2mE6j24RdXS8Ryr-EL2kT28rIPpkvoCap-YRskvu85f0pWL_YLvjnP7hpUciUioGq9_CrFpc6njK4_AsNqkcm8zgWmYN7WNu-rRM7F4WaZKnQ3T1q7d]
+    [pedir
 
     - lembrar de trocar o token no [body]
 
