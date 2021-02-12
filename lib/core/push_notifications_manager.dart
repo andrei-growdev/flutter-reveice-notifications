@@ -99,6 +99,7 @@ class PushNotificationManager {
       if (fcmToken == newToken) return;
 
       prefs.setString('fcm_token', newToken);
+      //! fazer requisição para trocar o token no servidor enviando ambos os tokens, o novo e o velho
     });
   }
 
