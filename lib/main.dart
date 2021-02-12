@@ -1,8 +1,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_receive_notifications/home_page.dart';
+import 'package:flutter_receive_notifications/core/push_notifications_manager.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  PushNotificationManager().configure().whenComplete(() {
+    PushNotificationManager().verifyToken();
+  });
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override

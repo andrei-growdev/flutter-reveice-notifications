@@ -9,7 +9,20 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+  String _message = '';
+  final FirebaseMessaging _fcm = FirebaseMessaging();
+
+  Future<void> getToken() async {
+    setState(() {
+      _fcm.getToken().then((value) {
+        _message = value;
+        print(_message);
+      });
+    });
+    
+  }
+
+  /* final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
   String _message = '';
 
   _registerOnFirebase() {
@@ -36,7 +49,7 @@ class _HomePageState extends State<HomePage> {
       print('on launch $message');
       setState(() => _message = message["notification"]["body"]);
     });
-  }
+  } */
 
   @override
   Widget build(BuildContext context) {
@@ -44,10 +57,20 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('Push Notifications Test'),
       ),
-      body: Container(
-          child: Center(
-        child: Text("Message: $_message"),
-      )),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            child: Center(
+              child: Text("Message: $_message"),
+            ),
+          ),
+          RaisedButton(
+            onPressed: getToken,
+            child: Text('Este botão não faz nada, só mostra o Token'),
+          ),
+        ],
+      ),
     );
   }
 }
