@@ -30,8 +30,9 @@
          "to": "AQUI DENTRO VAI O TOKEN DO SEU DISPOSITIVO QUE ESTA PRINTADO NO CONSOLE"
       }
 
-  Ao chegar a notificação o payload é tratado de duas formas, que no momento apenas printam o que cada uma deve fazer, para testar a outra maneira do payload é só trocar dentro no [body] o [type] do payload para "chatMessage"
-  e a linha de [status] trocar para ["message": "sua mensagem"]
+  Ao chegar a notificação o payload é tratado de duas formas, que no momento apenas printam o que cada uma deve fazer, para testar a outra maneira do payload é só trocar dentro no [body]
+   - o [type] do payload para "chatMessage"
+   - a linha de [status] trocar para "message": "sua mensagem"
 
 ## Getting Started
 
